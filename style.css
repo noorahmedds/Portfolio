@@ -23,7 +23,6 @@ html, body {
 	background-size: cover;
 	background-position: right 65px top;
 	margin-bottom : 50px;
-
 }
 
 .front{
@@ -51,24 +50,32 @@ html, body {
 	opacity: 0.8;
 }
 
-.main-button{
-	color:teal;
+/*.button-div{
+	background-color: black;
+}*/
+
+#main-button{
+	color:#2CDD99;
 	font-size: 1.2em;
 	padding: 3px;
 	border: 2px solid;
 	top: 20%;
 	transition-duration: 0.6s;
+	margin-right: 20px;
+	text-decoration: none;
 }
 
-.main-button:hover{
+#main-button:hover{
 	color: white;
 	background-color: #2CDD99;
 	border: 2px solid #2CDD99;
 	border-radius: 7px;
 	text-decoration: none;
+	cursor: pointer;
 }
 
-.secondary-button{
+
+#secondary-button{
 	color:white;
 	font-size: 1.2em;
 	padding: 3px;
@@ -77,13 +84,14 @@ html, body {
 	border-radius: 7px;
 	top: 20%;
 	transition-duration: 0.6s;
+	text-decoration: none;
 }
 
 
-.secondary-button:hover{
+#secondary-button:hover{
 	background-color: transparent;
-	color:teal;
-	border: 2px solid teal;
+	color:#2CDD99;
+	border: 2px solid #2CDD99;
 	border-radius: 0px;
 	text-decoration: none;
 }
@@ -138,6 +146,29 @@ html, body {
 	padding: 0px;
 	border: 0;
 	transform: rotate(180deg);
+}
+
+.content-grid:nth-child(odd){
+	background: #eee;
+	box-shadow:  5px 0 10px;
+}
+
+div {
+	padding: 10px 0;
+}
+
+footer {
+	background-color: #2CDD99;
+	padding: 10px;
+}
+
+#contact-links{
+	text-align: center;
+}
+
+.pseudo-link{
+	padding: 20px;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 768px){
