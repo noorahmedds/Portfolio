@@ -149,8 +149,7 @@ html, body {
 }
 
 .content-grid:nth-child(odd){
-	background: #eee;
-	box-shadow:  5px 0 10px;
+	background: rgb(250, 250, 250);
 }
 
 div {
@@ -160,6 +159,14 @@ div {
 footer {
 	background-color: #2CDD99;
 	padding: 10px;
+}
+
+i{
+	transition-duration: 0.4s;
+}
+
+i:hover {
+	color: white;
 }
 
 #contact-links{
@@ -173,30 +180,43 @@ footer {
 
 @media screen and (max-width: 768px){
 	.front h1:hover{
-	color: white;
-	font-size: 105px;
-	font-weight: 600;
-	background-color: #2CDD99;
-	opacity: 0.8;
+		color: white;
+		font-size: 105px;
+		font-weight: 600;
+		background-color: #2CDD99;
+		opacity: 0.8;
 	}
 	
 	.content-grid{
-	display:grid;
-	grid-template-columns: 10% 1fr 1fr 10%;
-	grid-template-areas: 
-	". contentTitle contentBody .";
+			display:block;
+			/*grid-template-columns: 10% 1fr 1fr 10%;
+			grid-template-areas: 
+			". contentTitle contentBody .";*/
 	}
 
-	.intro{
-	background: url("img/port.png");
-	width: 100%;
-	height: 100%;
-	display: table;
-	background-size: cover;
-	background-position: right -300px top;
-	margin-bottom : 50px;
 
-}
+
+	.intro{
+		background: url("img/port.png");
+		width: 100%;
+		height: 100%;
+		display: table;
+		background-size: cover;
+		background-position: right -300px top;
+		margin-bottom : 50px;
+	}
+
+	.content-right{
+		text-align: left;
+	}
+
+	.site-heading{
+		text-align: center;
+	}
+
+	div:nth-child(2){
+		padding: 10px;
+	}
 }
 
 
